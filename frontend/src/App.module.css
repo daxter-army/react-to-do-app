@@ -1,0 +1,15 @@
+.App {
+  display: block;
+  margin: auto;
+  width: 70%;
+  /* border: 1px red solid; */
+}
+
+.Heading {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.SubHeading {
+  /* padding-left: 20px; */
+}

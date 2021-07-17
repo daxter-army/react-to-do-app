@@ -1,0 +1,43 @@
+.Heading {
+  text-align: left;
+}
+
+.Card {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+
+  /* margin: 10px 0px; */
+  padding: 20px 15px;
+  font-size: large;
+  border: 1px #c0c0c0 solid;
+  /* background-color: #ddd3ee; */
+  border-radius: 5px;
+}
+
+.Checkbox {
+  transform: translateY(10%);
+  border: 1px red solid;
+}
+
+.TrueText {
+  text-decoration: line-through;
+}
+
+.FalseText {
+  text-decoration: none;
+}
+
+.CardTitle {
+  padding-top: -10px;
+  /* border: 1px #c0c0c0 solid; */
+}
+
+.DelBtn {
+}
+
+.Grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
