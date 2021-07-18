@@ -7,7 +7,7 @@ import classes from "./Header.module.css";
 const Header = () => {
   return (
     <div className={classes.Header}>
-      <h1>#ToDo</h1>
+      <h1 className={classes.Heading}>#ToDo</h1>
     </div>
   );
 };

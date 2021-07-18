@@ -1,11 +1,22 @@
 import React, { useState } from "react";
 
 import { AiOutlineDelete } from "react-icons/ai";
+import { BsPen } from "react-icons/bs";
 
 import classes from "./Notes.module.css";
 
 const Notes = (props) => {
-  //   const [check, setCheck] = useState(false);
+  const [title, setTitle] = useState("");
+
+  const updateTitleHandler = (e) => {
+    if (e.target.value) {
+      return setTitle(e.target.value);
+    }
+  };
+
+  const checkboxHandlerHelper = (id, status) => {
+    props.checkboxHandler({ id, status: !status });
+  };
 
   return (
     <div className={classes.Notes}>
@@ -18,14 +29,34 @@ const Notes = (props) => {
                   <input
                     type="checkbox"
                     className={classes.Checkbox}
-                    onChange={props.checkboxHandler}
+                    defaultChecked={item.status ? true : false}
+                    onChange={() =>
+                      checkboxHandlerHelper(item._id, item.status)
+                    }
                   />
                 </span>{" "}
-                <span className={classes.CardTitle}>{item.title}</span>
+                <input
+                  className={`${classes.CardTitle} ${
+                    item.status ? classes.CompletedTask : null
+                  }`}
+                  defaultValue={item.title}
+                  onChange={updateTitleHandler}
+                />
               </div>
-              <button className={classes.DelBtn}>
-                <AiOutlineDelete />
-              </button>
+              <div>
+                <button
+                  className={classes.EditBtn}
+                  onClick={() => props.modifyHandler({ title, id: item._id })}
+                >
+                  <BsPen />
+                </button>
+                <button
+                  className={classes.DelBtn}
+                  onClick={() => props.removeHandler(item._id)}
+                >
+                  <AiOutlineDelete />
+                </button>
+              </div>
             </div>
           );
         })}

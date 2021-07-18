@@ -5,6 +5,22 @@
   /* border: 1px red solid; */
 }
 
+.Notification {
+  /* text-align: center; */
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.NotificationSuccess {
+  color: white;
+  background-color: #27ae60;
+}
+
+.NotificationError {
+  color: white;
+  background-color: tomato;
+}
+
 .Heading {
   text-align: center;
   font-size: 2rem;
@@ -12,4 +28,10 @@
 
 .SubHeading {
   /* padding-left: 20px; */
+}
+
+.Info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

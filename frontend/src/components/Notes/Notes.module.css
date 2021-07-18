@@ -29,15 +29,78 @@
 }
 
 .CardTitle {
-  padding-top: -10px;
+  margin-left: 15px;
+  padding-left: 10px;
+  width: 300px;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  border: none;
+
+  /* background-color: rgb(201, 160, 220, 0.2); */
+  color: #222222;
+  border-radius: 3px;
+  line-height: 30px;
+  outline: none;
+
   /* border: 1px #c0c0c0 solid; */
 }
 
+/* .CardTitle:focus {
+  border: 1px #7851a9 solid;
+} */
+
+/* .UpdateIcon {
+  transform: translateY(30%);
+  color: blue;
+} */
+
+.UpdatingInput {
+  border: 1px blue solid;
+}
+
+.CompletedTask {
+  text-decoration: line-through;
+}
+
 .DelBtn {
+  font-size: 22px;
+  padding-top: 5px;
+  /* width: 40px; */
+  /* height: 40px; */
+  background-color: transparent;
+  cursor: pointer;
+  color: tomato;
+  border-radius: 50%;
+  transition: 0.1s;
+  border: none;
+}
+
+.DelBtn:hover {
+  color: white;
+  background-color: tomato;
+}
+
+.EditBtn {
+  margin-right: 10px;
+  font-size: 22px;
+  padding-top: 5px;
+  /* width: 40px; */
+  /* height: 40px; */
+  background-color: transparent;
+  cursor: pointer;
+  color: #27ae60;
+  border-radius: 50%;
+  transition: 0.1s;
+  border: none;
+}
+
+.EditBtn:hover {
+  color: white;
+  background-color: #27ae60;
 }
 
 .Grid {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
