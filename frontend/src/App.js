@@ -6,6 +6,7 @@ import axios from "axios";
 import Header from "./components/Header/Header";
 import SearchBar from "./components/SearchBar/SearchBar";
 import Notes from "./components/Notes/Notes.js";
+import Footer from "./components/Footer/Footer.js";
 
 // CSS STYLES
 import classes from "./App.module.css";
@@ -224,7 +225,7 @@ function App() {
           <div className={classes.Empty}>Added notes would be shown here!</div>
         )}
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
