@@ -1,8 +1,7 @@
 # #ToDo
+### A MERN stack to-do application
 
-## A MERN stack to-do application
-
-## Features
+## 🌟 Features
 
 - Dynamic List Rendering with Card view
 - Notification is shown for every success/failure event
@@ -10,12 +9,12 @@
 - Fully functional CRUD operations
 - Backend APIs for different functions
 
-## Requirements
+## 🔧 Requirements
 
 - Node.js version 14.x
 - MongoDB version >= 3.6
 
-## Setup
+## 🗜 Setup
 
 - Go to **backend** directory, open terminal there and hit - <br/>
   `npm install`<br/>
@@ -29,7 +28,7 @@
 
 - Now you can go to http://localhost:3000, to view application
 
-## Attribution
+## 🙏 Attribution
 
 - Assets used
   - React Icons
